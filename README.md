@@ -30,11 +30,6 @@ Remaps `Cmd + Q` on macOS to trigger **Quick Quantize** in FL Studio instead of 
 3. Save the file
 4. Click the hammer icon again and select **Reload Config**
 
-### Step 3 — Set the Shortcut in FL Studio
-1. Open FL Studio
-2. Go to **Options > Keyboard Shortcuts**
-3. Find **Quick Quantize** and set it to `Cmd + Option + Q`
-
 ## Troubleshooting
 
 **Shortcut not working in FL Studio?**
