@@ -1,4 +1,4 @@
-# FL Studio Quick Quantize — Hammerspoon Shortcut
+# FL Studio Quick Quantize Shortcut Fix
 
 Remaps `Cmd + Q` on macOS to trigger **Quick Quantize** in FL Studio instead of quitting it.
 
