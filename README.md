@@ -39,7 +39,15 @@ hs.timer.doAfter(5, function()
  print(hs.application.frontmostApplication():name())
 end)
 ```
-Switch to FL Studio immediately after running it. If the name printed is not exactly `FL Studio`, update the name check in `init.lua` to match.
+Switch to FL Studio immediately after running it. Note the exact name printed.
+
+Then open `init.lua` and find this line:
+
+```lua
+if flApp and flApp:name() == "FL Studio" then
+```
+
+Replace `FL Studio` with whatever name was printed in the console.
 
 **`Cmd + Q` still quitting other apps normally?**
 That is expected — the remap only activates when FL Studio is the focused window.
