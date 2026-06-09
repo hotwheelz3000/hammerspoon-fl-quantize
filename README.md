@@ -7,7 +7,7 @@ Remaps `Cmd + Q` on macOS to trigger **Quick Quantize** in FL Studio instead of 
 | Action | Result |
 |---|---|
 | Tap `Cmd + Q` in FL Studio | Triggers Quick Quantize |
-| Hold `Cmd + Q` for 0.5s in FL Studio | Quits FL Studio |
+| Hold `Cmd + Q` for 1.5s in FL Studio | Quits FL Studio |
 | `Cmd + Q` anywhere else | Quits the app normally |
 
 ## Requirements
@@ -36,10 +36,10 @@ Remaps `Cmd + Q` on macOS to trigger **Quick Quantize** in FL Studio instead of 
 Open the Hammerspoon Console (hammer icon > Console) and run:
 ```lua
 hs.timer.doAfter(5, function()
-  print(hs.application.frontmostApplication():name())
+ print(hs.application.frontmostApplication():name())
 end)
 ```
-Switch to FL Studio immediately after running it. If the name printed is not exactly `FL Studio`, update line 7 of `init.lua` to match.
+Switch to FL Studio immediately after running it. If the name printed is not exactly `FL Studio`, update the name check in `init.lua` to match.
 
 **`Cmd + Q` still quitting other apps normally?**
 That is expected — the remap only activates when FL Studio is the focused window.
